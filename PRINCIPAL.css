@@ -1,0 +1,306 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/*================================================================*/
+.contenido1{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(152, 240, 28);
+  background-size: 100% 100%;
+  animation: fotos2 20s infinite;
+}
+/*CAMBIA DE LADO A LA IMAGEN*/
+.imagen1:hover {
+  -webkit-transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+}
+@keyframes fotos2 {
+  0%{background-image: url(IMAGENES/BANNER1.jpg);}
+  17%{background-image: url(IMAGENES/BANNER2.jpg);}
+  35%{background-image: url(IMAGENES/BANNER3.jpg);}
+  50%{background-image: url(IMAGENES/BANNER4.jpg);}
+  67%{background-image: url(IMAGENES/BANNER5.jpg);}
+  84%{background-image: url(IMAGENES/BANNER6.jpg);}
+  100%{background-image: url(IMAGENES/BANNER1.jpg);}
+  
+}
+.contenido1 P{
+    font-size: 110px;
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    order-width: 5px;
+    border-style: solid;
+    border-color: black; 
+
+}
+/*================================================================*/
+.contenido2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 90px;
+    gap: 0px;
+    background-color: rgb(19, 18, 18);
+}
+.boton{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+/* MENU DE BOTONES*/
+.menu {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  /* Bordes superiores */
+  
+  .menu.servicios {
+    border-top: #ffc000 0.3em solid;
+  }
+  
+  .menu.recursos {
+    border-top: #b81800 0.3em solid;
+  }
+  
+  .menu.proyectos {
+    border-top: #00a53c 0.3em solid;
+  }
+  
+  .menu.contacto {
+    border-top: #9600b4 0.3em solid;
+  }
+  
+  .menu > span {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    
+  }
+  
+  .menu:after, .menu > span > span {
+    display: block;
+    text-align: center;
+    border-radius: 0em;
+    padding: 2em 0 1.5em;
+  }
+  
+  .menu:after {
+    content: attr(data-title);
+    width: 100%;
+    width: 100%;
+    background: #000;
+    color: #fff; 
+  }
+  
+  .menu > span > span {
+    width: 95%;
+    color: #fff;
+    bottom: 0px;
+    font-size: 17px;
+  }
+  
+  .menu.servicios > span > span {
+    background: #ffc000;
+  }
+  
+  .menu.proyectos > span > span {
+    background: #00a53c;
+  }
+  
+  .menu.recursos > span > span {
+    background: #b81800;
+  }
+  
+  .menu.contacto > span > span {
+      background: #9600b4;
+      align-content: center;
+      text-align: center;
+  }
+  
+  .menu:hover > span {
+      height: 100%; 
+      align-content: center;
+      text-align: center;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li a {
+    display: inline;
+    float: left;
+    text-decoration: none;
+    font-family: sans;
+    
+  }
+/*================================================================*/
+.contenido3{
+    width: 100%;
+    height: 210px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    align-content: center;
+    align-self: center;
+}
+.contenido3 h1{
+  color: #000;
+  font-size: 45px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.contenido3 p{
+  color: #000;
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.mivideo{
+  width: 80%;
+  height: 100;
+}
+/*================================================================*/
+.contenido4{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 350px;
+    gap: 10px;
+}
+.galeria{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(252, 134, 24);
+}
+.galeria0{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    background-size: 100% 100%;
+    animation: fotos3 20s linear infinite;
+}
+/*CAMBIA DE LADO A LA IMAGEN*/
+.galeria0:hover {
+  -webkit-transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+}
+@keyframes fotos3 {
+  0%{background-image: url(IMAGENES/00001.png);}
+  12%{background-image: url(IMAGENES/00002.jpg);}
+  24%{background-image: url(IMAGENES/00003.avif);}
+  36%{background-image: url(IMAGENES/00004.jpg);}
+  48%{background-image: url(IMAGENES/00005.jpeg);}
+  60%{background-image: url(IMAGENES/00006.avif);}
+  72%{background-image: url(IMAGENES/00007.png);}
+  84%{background-image: url(IMAGENES/00008.jpg);}
+  100%{background-image: url(IMAGENES/00001.png);}
+  
+}
+.galeria1{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+}
+.galeria1 h1{
+    color: #000;
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.galeria1 p{
+    color: #000;
+    font-size: 21px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.carousel-item .imagen1{
+  width: 100%;
+  height: 350px;
+}
+.d-block{
+  width: 100%;
+  height: 350px;
+}
+.galeria2{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  background-size: 100% 100%;
+  animation: fotos4 20s linear infinite;
+}
+/*CAMBIA DE LADO A LA IMAGEN*/
+.galeria2:hover {
+-webkit-transform: rotateY(180deg);
+-webkit-transform-style: preserve-3d;
+transform: rotateY(180deg);
+transform-style: preserve-3d;
+}
+@keyframes fotos4 {
+0%{background-image: url(IMAGENES/c1.webp);}
+12%{background-image: url(IMAGENES/c2.avif);}
+24%{background-image: url(IMAGENES/c3.avif);}
+36%{background-image: url(IMAGENES/c4.jpg);}
+48%{background-image: url(IMAGENES/c5.jpg);}
+60%{background-image: url(IMAGENES/c6.avif);}
+72%{background-image: url(IMAGENES/c7.jpg);}
+84%{background-image: url(IMAGENES/c8.webp);}
+100%{background-image: url(IMAGENES/c1.webp);}
+
+}
+/*================================================================*/
+.contenido5{
+    width: 100%;
+    height: 600px;
+    background-color: rgb(5, 5, 5);
+    text-align: center;
+}
+/*================================================================*/
+.contenido6{
+  width: 100%;
+  height: 330px;
+  background-color: rgb(38, 63, 92);
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  opacity: 1;
+}
+.contenido6 .foot1{
+  width: 100%;
+  height: 100%;
+  padding: 45px;
+  text-align: justify;
+}
+.foot1 p{
+  padding: 1px;
+  color: white;
+}
+.contenido6 .foot1 h4{
+  padding: 4px;
+  color: white;
+  text-align: justify;
+}
